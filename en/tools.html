@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Online Tools — Calculate, Convert & More | PINFOX</title>
+    <meta name="description" content="Free online tools for calculations, conversions and technical tasks. VAT calculator, color converter and more — fast and ad-free.">
+    <meta name="keywords" content="online tools, calculation tools, conversion tools, vat calculator, color converter, pinfox tools">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://pinfox.tech/en/tools.html">
+    <meta property="og:title" content="Free Online Tools | PINFOX">
+    <meta property="og:description" content="Free online tools for calculations, conversions and technical tasks. Fast and ad-free.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pinfox.tech/en/tools.html">
+    <meta property="og:image" content="https://pinfox.tech/assets/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Free Online Tools | PINFOX">
+    <meta name="twitter:description" content="Free online tools for calculations, conversions and technical tasks. Fast and ad-free.">
+    <link rel="stylesheet" href="/style.css?v=4">
+    <style>
+        /* Search butonu */
+        .search-btn { transition: transform 0.2s ease, filter 0.2s ease !important; }
+        .search-btn:hover { transform: translateY(-4px) !important; filter: brightness(1.15) drop-shadow(0 8px 14px rgba(0,0,0,0.5)) !important; }
+
+        /* Play / Kullan butonları */
+        .play-btn {
+            box-shadow: 0 0 0 1.5px rgba(255,255,255,0.04) inset !important;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease !important;
+        }
+        .play-btn:hover {
+            transform: translateY(-4px) !important;
+            box-shadow: 0 0 0 1.5px rgba(255,255,255,0.04) inset, 0 8px 20px rgba(0,0,0,0.4) !important;
+            filter: brightness(1.15) drop-shadow(0 4px 10px rgba(0,0,0,0.4)) !important;
+        }
+
+        /* Tools sayfası: 3 kolon yan yana, kartlar dikey */
+        .tools-page .categories {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        /* Renkli üst panel yok, wrapper başlık olarak kullanılıyor */
+        .tools-page .cat-wrapper {
+            background: #272042;
+        }
+
+        /* Bölüm başlığı */
+        .section-title {
+            font-size: 36px;
+            font-weight: 700;
+            color: white;
+            padding: 24px 24px 0 24px;
+            margin: 0;
+            letter-spacing: 0.5px;
+        }
+
+        .tools-page .card {
+            width: 100%;
+            margin: 0;
+        }
+    </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VPQW1XT9Y7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-VPQW1XT9Y7');
+    </script>
+</head>
+<body class="tools-page">
+
+<div class="container">
+
+    <!-- HEADER -->
+    <header class="top-bar">
+        <div class="top-left">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="/assets/logo_pinfox.svg" alt="Pinfox Logo">
+                </a>
+            </div>
+            <button class="lang glass-soft">EN</button>
+        </div>
+
+        <div class="search-section">
+            <input class="glass-soft" type="text" placeholder="Search tools, games or ideas...">
+            <button class="search-btn glass-strong">
+                <svg xmlns="http://www.w3.org/2000/svg" width="44.208" height="44.208" viewBox="0 0 44.208 44.208">
+                    <path id="icon_search" d="M13.127,36.266a2.654,2.654,0,0,1-2.656-2.656V25.985A13.045,13.045,0,0,1,6.313,24.35,13.15,13.15,0,0,1,.267,10.482,13.055,13.055,0,0,1,2.242,5.788,13.165,13.165,0,0,1,8.017,1.032,13.061,13.061,0,0,1,10.482.267a13.255,13.255,0,0,1,5.291,0,13.055,13.055,0,0,1,4.694,1.975,13.165,13.165,0,0,1,4.756,5.776,13.061,13.061,0,0,1,.765,2.464,13.225,13.225,0,0,1,.267,2.646,13.085,13.085,0,0,1-2.994,8.346,13.147,13.147,0,0,1-5.311,3.867,13.067,13.067,0,0,1-2.166.645V33.61a2.654,2.654,0,0,1-2.656,2.656Zm0-32.486a9.347,9.347,0,1,0,9.347,9.347A9.358,9.358,0,0,0,13.127,3.78Z" transform="translate(0 18.565) rotate(-45)" fill="#fff" opacity="0.42"/>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <div class="top-divider"></div>
+
+    <!-- KATEGORİLER -->
+    <section class="categories">
+
+        <!-- HESAPLAMA ARAÇLARI -->
+        <div class="cat-wrapper">
+            <h2 class="section-title">Calculation Tools</h2>
+
+            <div class="filter-box">
+                <div class="filter-header" onclick="toggleFilter(this)">
+                    <span>Most used</span>
+                    <svg class="arrow-icon" viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="filter-content">Size özel sıralama</div>
+            </div>
+
+            <div class="sub-area">
+                <div class="card game-card tool-kdv glass-soft" style="cursor:pointer;" onclick="window.location='/en/tools/vat-calculator.html'">
+                    <div class="card-bottom">
+                        <div class="card-stats">
+                            <img src="/assets/icon_human.svg" class="stat-icon" alt="kullanıcı" style="filter:brightness(0) invert(1);opacity:0.6;">
+                            <span class="play-count" data-count-type="tool" data-count-id="vat-calculator">0</span>
+                        </div>
+                        <button class="play-btn glass-soft">Use</button>
+                    </div>
+                </div>
+                <div class="card glass-soft"></div>
+                <div class="card glass-soft"></div>
+            </div>
+        </div>
+
+        <!-- DÖNÜŞTÜRME ARAÇLARI -->
+        <div class="cat-wrapper">
+            <h2 class="section-title">Conversion Tools</h2>
+
+            <div class="filter-box">
+                <div class="filter-header" onclick="toggleFilter(this)">
+                    <span>Most used</span>
+                    <svg class="arrow-icon" viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="filter-content">Size özel sıralama</div>
+            </div>
+
+            <div class="sub-area">
+                <div class="card game-card tool-renk-donusturucu glass-soft" onclick="window.location='/en/tools/color-converter.html'" style="cursor:pointer;">
+                    <div class="card-label">
+                        <span class="card-label-main">COLOR</span>
+                        <span class="card-label-sub">CONVERTER</span>
+                    </div>
+                    <div class="card-bottom">
+                        <div class="card-stats">
+                            <img src="/assets/icon_human.svg" class="stat-icon" alt="kullanıcı" style="filter:brightness(0) invert(1);opacity:0.6;">
+                            <span class="play-count" data-count-type="tool" data-count-id="color-converter">0</span>
+                        </div>
+                        <button class="play-btn glass-soft" style="min-width:80px;">Use</button>
+                    </div>
+                </div>
+                <div class="card glass-soft"></div>
+                <div class="card glass-soft"></div>
+            </div>
+        </div>
+
+        <!-- TEKNİK ARAÇLAR -->
+        <div class="cat-wrapper">
+            <h2 class="section-title">Technical Tools</h2>
+
+            <div class="filter-box">
+                <div class="filter-header" onclick="toggleFilter(this)">
+                    <span>Most used</span>
+                    <svg class="arrow-icon" viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="filter-content">Size özel sıralama</div>
+            </div>
+
+            <div class="sub-area">
+                <div class="card glass-soft"></div>
+                <div class="card glass-soft"></div>
+                <div class="card glass-soft"></div>
+            </div>
+        </div>
+
+    </section>
+
+</div>
+
+<script src="/main.js?v=4"></script>
+</body>
+</html>

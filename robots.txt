@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap konumu
+Sitemap: https://pinfox.tech/sitemap.xml

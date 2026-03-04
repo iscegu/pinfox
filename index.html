@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PINFOX — Ücretsiz Online Oyunlar, Web Araçları ve Teknoloji</title>
+    <meta name="description" content="PINFOX ile tarayıcı tabanlı oyunlar oynayın, KDV hesaplayıcı gibi online araçları kullanın ve teknoloji dünyasına dair içerikleri keşfedin. Hızlı, ücretsiz ve reklamsız.">
+    <meta name="keywords" content="pinfox, online oyunlar, web araçları, tarayıcı oyunları, kdv hesaplayıcı, ücretsiz araçlar">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://pinfox.tech/">
+    <meta property="og:title" content="PINFOX — Ücretsiz Online Oyunlar, Web Araçları ve Teknoloji">
+    <meta property="og:description" content="Tarayıcı tabanlı oyunlar oynayın, KDV hesaplayıcı gibi akıllı web araçlarını kullanın ve teknoloji içeriklerini keşfedin. Ücretsiz ve reklamsız.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pinfox.tech/">
+    <meta property="og:image" content="https://pinfox.tech/assets/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="PINFOX — Ücretsiz Online Oyunlar, Web Araçları ve Teknoloji">
+    <meta name="twitter:description" content="Tarayıcı tabanlı oyunlar oynayın, akıllı web araçlarını kullanın ve teknoloji içeriklerini keşfedin. Ücretsiz ve reklamsız.">
+    <link rel="stylesheet" href="style.css?v=4">
+    <style>
+        /* Search butonu */
+        .search-btn { transition: transform 0.2s ease, filter 0.2s ease !important; }
+        .search-btn:hover { transform: translateY(-4px) !important; filter: brightness(1.15) drop-shadow(0 8px 14px rgba(0,0,0,0.5)) !important; }
+
+        /* Play / Kullan butonları */
+        .play-btn {
+            box-shadow: 0 0 0 1.5px rgba(255,255,255,0.04) inset !important;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease !important;
+        }
+        .play-btn:hover {
+            transform: translateY(-4px) !important;
+            box-shadow: 0 0 0 1.5px rgba(255,255,255,0.04) inset, 0 8px 20px rgba(0,0,0,0.4) !important;
+            filter: brightness(1.15) drop-shadow(0 4px 10px rgba(0,0,0,0.4)) !important;
+        }
+    </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VPQW1XT9Y7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-VPQW1XT9Y7');
+    </script>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+    <header class="top-bar">
+        <div class="top-left">
+            <div class="logo">
+                <img src="/assets/logo_pinfox.svg" alt="Pinfox Logo">
+            </div>
+            <button class="lang glass-soft">TR</button>
+        </div>
+
+        <div class="search-section">
+            <input class="glass-soft" type="text" placeholder="Araçları, oyunları veya fikirleri arayın...">
+            <button class="search-btn glass-strong">
+                <svg xmlns="http://www.w3.org/2000/svg" width="44.208" height="44.208" viewBox="0 0 44.208 44.208">
+                    <path id="icon_search" d="M13.127,36.266a2.654,2.654,0,0,1-2.656-2.656V25.985A13.045,13.045,0,0,1,6.313,24.35,13.15,13.15,0,0,1,.267,10.482,13.055,13.055,0,0,1,2.242,5.788,13.165,13.165,0,0,1,8.017,1.032,13.061,13.061,0,0,1,10.482.267a13.255,13.255,0,0,1,5.291,0,13.055,13.055,0,0,1,4.694,1.975,13.165,13.165,0,0,1,4.756,5.776,13.061,13.061,0,0,1,.765,2.464,13.225,13.225,0,0,1,.267,2.646,13.085,13.085,0,0,1-2.994,8.346,13.147,13.147,0,0,1-5.311,3.867,13.067,13.067,0,0,1-2.166.645V33.61a2.654,2.654,0,0,1-2.656,2.656Zm0-32.486a9.347,9.347,0,1,0,9.347,9.347A9.358,9.358,0,0,0,13.127,3.78Z" transform="translate(0 18.565) rotate(-45)" fill="#fff" opacity="0.42"/>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <div class="top-divider"></div>
+
+    <!-- KATEGORİLER -->
+    <section class="categories">
+
+        <!-- GAMES -->
+        <div class="cat-wrapper" onclick="window.location='tools.html'" style="cursor:pointer;">
+            <div class="cat games glass-strong">
+                <div class="cat-header">
+                    <div class="cat-icon">
+                        <img src="/assets/icon_games.svg" alt="Games">
+                    </div>
+                    <h2>GAMES</h2>
+                    <div class="counter" id="gamesCounter">9.999.999</div>
+                </div>
+                <p>Anında baslayan, hızlı ve akıcı tarayıcı tabanlı oyunlar.</p>
+            </div>
+
+            <div class="filter-box">
+                <div class="filter-header" onclick="toggleFilter(this)">
+                    <span>En çok oynananlar</span>
+                    <svg class="arrow-icon" viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="filter-content">Size özel sıralama</div>
+            </div>
+
+            <div class="sub-area">
+                <div class="card game-card game-racire glass-soft" onclick="trackHit('game','racire')">
+                    <div class="card-bottom">
+                        <div class="card-stats">
+                            <img src="/assets/icon_human.svg" class="stat-icon" alt="oyuncu" style="filter:brightness(0) invert(1);opacity:0.6;">
+                            <span class="play-count" data-count-type="game" data-count-id="racire">0</span>
+                        </div>
+                        <button class="play-btn glass-soft">Oyna</button>
+                    </div>
+                </div>
+                <div class="card glass-soft"></div>
+                <div class="card glass-soft"></div>
+            </div>
+        </div>
+
+        <!-- TOOLS -->
+        <div class="cat-wrapper" onclick="window.location='tools.html'" style="cursor:pointer;">
+            <div class="cat tools glass-strong">
+                <div class="cat-header">
+                    <div class="cat-icon">
+                        <img src="/assets/icon_tools.svg?v=4" alt="Tools">
+                    </div>
+                    <h2>TOOLS</h2>
+                    <div class="counter" id="toolsCounter">9.999.999</div>
+                </div>
+                <p>Hızlı, güvenilir ve günlük ihtiyaçlara yönelik akıllı web araçları.</p>
+            </div>
+
+            <div class="filter-box">
+                <div class="filter-header" onclick="toggleFilter(this)">
+                    <span>En çok kullanılanlar</span>
+                    <svg class="arrow-icon" viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="filter-content">Size özel sıralama</div>
+            </div>
+
+            <div class="sub-area">
+                <div class="card game-card tool-kdv glass-soft" onclick="event.stopPropagation(); trackHit('tool','kdv-hesaplayici'); window.location='/tools/kdv-hesaplayici.html';" style="cursor:pointer;">
+                    <div class="card-label">
+                        <span class="card-label-main">KDV</span>
+                        <span class="card-label-sub">HESAPLAYICI</span>
+                    </div>
+                    <div class="card-bottom">
+                        <div class="card-stats">
+                            <img src="/assets/icon_human.svg" class="stat-icon" alt="oyuncu" style="filter:brightness(0) invert(1);opacity:0.6;">
+                            <span class="play-count" data-count-type="tool" data-count-id="kdv-hesaplayici">0</span>
+                        </div>
+                        <button class="play-btn glass-soft">Kullan</button>
+                    </div>
+                </div>
+                <div class="card glass-soft"></div>
+                <div class="card glass-soft"></div>
+            </div>
+        </div>
+
+        <!-- SOCIAL -->
+        <div class="cat-wrapper" onclick="window.location='tools.html'" style="cursor:pointer;">
+            <div class="cat social glass-strong">
+                <div class="cat-header">
+                    <div class="cat-icon">
+                        <img src="/assets/icon_social.svg" alt="Social">
+                    </div>
+                    <h2>SOCIAL</h2>
+                    <div class="counter" id="socialCounter">9.999.999</div>
+                </div>
+                <p>Teknoloji ve dijital dünyaya dair kapsamlı bilgi merkezi.</p>
+            </div>
+
+            <div class="filter-box">
+                <div class="filter-header" onclick="toggleFilter(this)">
+                    <span>En popüler konular</span>
+                    <svg class="arrow-icon" viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="filter-content">Size özel sıralama</div>
+            </div>
+
+            <div class="sub-area">
+                <div class="card glass-soft"></div>
+                <div class="card glass-soft"></div>
+                <div class="card glass-soft"></div>
+            </div>
+        </div>
+
+    </section>
+
+</div>
+
+<script src="main.js?v=4"></script>
+</body>
+</html>
