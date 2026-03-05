@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sayfa Bulunamadı | PINFOX</title>
     <meta name="robots" content="noindex, follow">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/style.css?v=5">
     <style>
         .search-btn { transition: transform 0.2s ease, filter 0.2s ease !important; }
         .search-btn:hover { transform: translateY(-4px) !important; filter: brightness(1.15) drop-shadow(0 8px 14px rgba(0,0,0,0.5)) !important; }
@@ -61,7 +61,7 @@
             padding: 0 32px;
             border: none;
             border-radius: 12px;
-            font-family: 'Dense', sans-serif;
+            font-family: 'Barlow Condensed', 'Dense', sans-serif;
             font-size: 28px;
             font-weight: 400;
             cursor: pointer;
@@ -115,7 +115,22 @@
                     <img src="/assets/logo_pinfox.svg" alt="Pinfox Logo">
                 </a>
             </div>
-            <button class="lang glass-soft">TR</button>
+            <div class="lang-wrap">
+            <button class="lang glass-soft">
+                TR
+                <svg class="lang-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M6 9l6 6 6-6"/>
+                </svg>
+            </button>
+            <div class="lang-dropdown">
+                <a href="/" class="lang-option active">
+                    <span class="lang-flag">🇹🇷</span> Türkçe
+                </a>
+                <a href="/en/" class="lang-option ">
+                    <span class="lang-flag">🇬🇧</span> English
+                </a>
+            </div>
+        </div>
         </div>
         <div class="search-section">
             <input class="glass-soft" type="text" placeholder="Araçları, oyunları veya fikirleri arayın...">

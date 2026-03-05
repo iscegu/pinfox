@@ -17,7 +17,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="PINFOX — Ücretsiz Online Oyunlar, Web Araçları ve Teknoloji">
     <meta name="twitter:description" content="Tarayıcı tabanlı oyunlar oynayın, akıllı web araçlarını kullanın ve teknoloji içeriklerini keşfedin. Ücretsiz ve reklamsız.">
-    <link rel="stylesheet" href="style.css?v=4">
+    <link rel="stylesheet" href="style.css?v=5">
     <style>
         /* Search butonu */
         .search-btn { transition: transform 0.2s ease, filter 0.2s ease !important; }
@@ -53,7 +53,22 @@
             <div class="logo">
                 <img src="/assets/logo_pinfox.svg" alt="Pinfox Logo">
             </div>
-            <button class="lang glass-soft">TR</button>
+            <div class="lang-wrap">
+            <button class="lang glass-soft">
+                TR
+                <svg class="lang-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M6 9l6 6 6-6"/>
+                </svg>
+            </button>
+            <div class="lang-dropdown">
+                <a href="/" class="lang-option active">
+                    <span class="lang-flag">🇹🇷</span> Türkçe
+                </a>
+                <a href="/en/" class="lang-option ">
+                    <span class="lang-flag">🇬🇧</span> English
+                </a>
+            </div>
+        </div>
         </div>
 
         <div class="search-section">
@@ -114,7 +129,7 @@
             <div class="cat tools glass-strong">
                 <div class="cat-header">
                     <div class="cat-icon">
-                        <img src="/assets/icon_tools.svg?v=4" alt="Tools">
+                        <img src="/assets/icon_tools.svg?v=5" alt="Tools">
                     </div>
                     <h2>TOOLS</h2>
                     <div class="counter" id="toolsCounter">9.999.999</div>
@@ -185,6 +200,6 @@
 
 </div>
 
-<script src="main.js?v=4"></script>
+<script src="main.js?v=5"></script>
 </body>
 </html>

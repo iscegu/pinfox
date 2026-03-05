@@ -69,3 +69,23 @@ async function loadCounters() {
 document.addEventListener('DOMContentLoaded', () => {
     loadCounters();
 });
+
+/* ============================================================
+   DİL DROPDOWN
+============================================================ */
+
+document.addEventListener('DOMContentLoaded', () => {
+    const wrap = document.querySelector('.lang-wrap');
+    if (!wrap) return;
+
+    /* Aç/kapat */
+    wrap.querySelector('.lang').addEventListener('click', (e) => {
+        e.stopPropagation();
+        wrap.classList.toggle('open');
+    });
+
+    /* Dışarı tıklayınca kapat */
+    document.addEventListener('click', () => {
+        wrap.classList.remove('open');
+    });
+});
