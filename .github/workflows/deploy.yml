@@ -20,15 +20,6 @@ jobs:
           chmod 600 ~/.ssh/deploy_key
           ssh-keyscan -p 22 -H ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts 2>/dev/null
 
-      - name: Test SSH connection
-        run: |
-          ssh -i ~/.ssh/deploy_key \
-              -o StrictHostKeyChecking=no \
-              -o ConnectTimeout=10 \
-              -p 22 \
-              ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} \
-              "echo SSH OK"
-
       - name: Deploy files to server
         run: |
           rsync -avz --delete \
@@ -36,6 +27,8 @@ jobs:
             --exclude='.git' \
             --exclude='.github' \
             --exclude='data/counts.json' \
+            --exclude='.user.ini' \
+            --exclude='502.html' \
             ./ ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }}:/www/wwwroot/pinfox.tech/
 
       - name: Done
