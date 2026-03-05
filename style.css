@@ -70,20 +70,7 @@ body {
     margin: 20px 0 20px 0;
 }
 
-.lang {
-    height: 56px;
-    padding: 0 10px;
-    border-radius: 10px;
-    background: #2A2345;
-    color: #8B8BAF;
-    border: none;
-    font-size: 30px;
-    font-family: 'Dense', sans-serif;
-    font-weight: 400;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+/* .lang — aşağıdaki DİL DROPDOWN bölümünde tanımlandı */
 
 /* SEARCH */
 
