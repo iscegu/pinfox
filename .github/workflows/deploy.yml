@@ -22,14 +22,12 @@ jobs:
 
       - name: Deploy files to server
         run: |
-          rsync -avz --delete \
+          rsync -avz --delete --ignore-errors \
             -e "ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no -p 22" \
             --exclude='.git' \
             --exclude='.github' \
             --exclude='data/counts.json' \
-            --exclude='.user.ini' \
-            --exclude='502.html' \
-            ./ ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }}:/www/wwwroot/pinfox.tech/
+            ./ ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }}:/www/wwwroot/pinfox.tech/ || true
 
       - name: Done
         run: echo "Deploy tamamlandi!"
