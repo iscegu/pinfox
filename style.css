@@ -6,19 +6,19 @@
 
 @font-face {
     font-family: 'Dense';
-    src: url('/assets/fonts/Dense-Regular.otf?v=5') format('opentype');
+    src: url('/assets/fonts/Dense-Regular.otf?v=6') format('opentype');
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'Dense';
-    src: url('/assets/fonts/Dense-Bold.ttf?v=5') format('truetype');
+    src: url('/assets/fonts/Dense-Bold.ttf?v=6') format('truetype');
     font-weight: 700;
 }
 
 @font-face {
     font-family: 'Dense';
-    src: url('/assets/fonts/Dense-Thin.ttf?v=5') format('truetype');
+    src: url('/assets/fonts/Dense-Thin.ttf?v=6') format('truetype');
     font-weight: 200;
 }
 
@@ -161,21 +161,21 @@ body {
 
 .games {
     background:
-        url('/assets/back_games.svg?v=5') no-repeat right center,
+        url('/assets/back_games.svg?v=6') no-repeat right center,
         linear-gradient(to bottom, #F97543, #772E2D);
     background-size: 120px auto, cover;
 }
 
 .tools {
     background:
-        url('/assets/back_tools.svg?v=5') no-repeat right center,
+        url('/assets/back_tools.svg?v=6') no-repeat right center,
         linear-gradient(to bottom, #AEAE29, #5C5938);
     background-size: 120px auto, cover;
 }
 
 .social {
     background:
-        url('/assets/back_social.svg?v=5') no-repeat right center,
+        url('/assets/back_social.svg?v=6') no-repeat right center,
         linear-gradient(to bottom, #10B18C, #235D6A);
     background-size: 120px auto, cover;
 }
@@ -363,7 +363,7 @@ body {
 /* KART GÖRSELLERİ */
 
 .tool-kdv {
-    background-image: url('/assets/images/image_tool_kdvhesaplayici.png?v=5');
+    background-image: url('/assets/images/image_tool_kdvhesaplayici.png?v=6');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -385,7 +385,7 @@ body {
 }
 
 .game-racire {
-    background-image: url('/assets/images/image_game_racire.png?v=5');
+    background-image: url('/assets/images/image_game_racire.png?v=6');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -407,7 +407,7 @@ body {
 }
 
 .tool-renk-donusturucu {
-    background-image: url('/assets/images/image_tool_renkdonusturucu.png?v=5');
+    background-image: url('/assets/images/image_tool_renkdonusturucu.png?v=6');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
